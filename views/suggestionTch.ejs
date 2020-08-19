@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>SUGGESTION</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">TEACHER SUGGESTION</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- 6 -->
+            <li id="home"><a href="/homeTch">HOME</a></li>
+          <li id="about"><a href="/suggestionTch">SUGGESTION</a></li>
+          <li id="contact"><a href="/showStdComplain">COLLEGE COMPLAINS</a></li>
+          <li id="contact"><a href="/showStdHostelComplain">HOSTEL COMPLAINS</a></li>
+          <li><a href="/composeTch">COMPOSE</a></li>
+          <li><a href="/logout">LOGOUT</a></li>
+
+        </ul>
+    </div>
+  </nav>
+<br>
+<% for ( var i = (posts.length-1); i >= 0 ; i--) {  %>
+  <h3>Name: <%= posts[i].name %></h3>
+  <h4>Title: <%= posts[i].title %></h4>
+  <h5>Branch: <%= posts[i].branch %></h5>
+  <h5>Section:<%= posts[i].section %></h5>
+  <h5>Year:<%= posts[i].year %></h5>
+  <p>Problem: <%= posts[i].content.substring(0,100) + "..."%></p>
+
+<% } %>
+</body>
+</html>

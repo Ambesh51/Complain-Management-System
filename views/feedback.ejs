@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>REPLY</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">REPLY</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+           
+          
+
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+
+
+<form  id='myform' method="post"   >
+<!--  <h3>Reply For: <%= doc.name %></h3>
+  <h3>id For: <%= doc.id %></h3>-->
+  <br>
+<h4>Teacher Name</h4>
+<input type="text" class="form-control" name="teacherName" value="<%= reply.teacherName%>" required ><br>
+<h4>Reply</h4>
+<textarea  rows="5" cols="50"  class="form-control" name="replyMessage" required><%= reply.replyMessage%></textarea><br>
+<br>
+<br>     
+<button type="submit" class="btn btn-primary">Proced</button>
+
+
+</form>
+</div>
+</body>
+</html>

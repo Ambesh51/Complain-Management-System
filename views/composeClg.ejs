@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>COMPOSE</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <p class="navbar-brand">COLLEGE COMPLAIN</p>
+      </div>
+        <ul class="nav navbar-nav navbar-right">
+          <!-- 6 -->
+          <li id="home"><a href="/student">HOME</a></li>
+          <li id="home"><a href="/collegeStd">COMPLAIN</a></li>
+          <li><a href="/composeClg">Compose</a></li>
+           <li><a href="/logout">LOGOUT</a></li>
+
+        </ul>
+    </div>
+  </nav>
+
+  <body>
+    <div class="container">
+
+
+<form  id='myform' method="post" action ="/composeClg">
+  <h4>Name</h4>
+    <input type="text" class="form-control" name="postName" maxlength="30" placeholder="Name Not Mentioned"  required>
+  <br>
+<h4>Title</h4>
+<input type="text" class="form-control" name="postTitle" required ><br>
+<h4>Problem</h4>
+<textarea  rows="5" cols="50"  class="form-control" name="postContent" required></textarea><br>
+<select name="branch" id="">
+    <option value="CSE">CSE</option>
+    <option value="ME">ME</option>
+    <option value="IT">IT</option>
+    <option value="CIVIL">CIVIL</option>
+    <option value="EE">EE</option>
+    <option value="EC">EC</option>
+  </select>
+
+
+<select name="section" id="" style="margin-left: 30px">
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="C">C</option>
+    <option value="D">D</option>
+  </select>
+
+<br>
+<br>
+<input type="radio" name="year" value="1" required>
+  <label for="1">1 st Year</label><br>
+<input type="radio" name="year" value="2" required>
+  <label for="2">2 nd Year</label><br>
+  <input type="radio" name="year" value="3" required>
+  <label for="3">3 rd Year</label><br>
+<input type="radio" name="year" value="4" required>
+  <label for="4">4 th Year</label><br><br>
+  
+      
+<button type="submit" class="btn btn-primary">Proced</button>
+
+</form>
+
+
+</div>
+
+
+
+
+</body>
+</html>
